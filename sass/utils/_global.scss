@@ -1,0 +1,41 @@
+@use "./vars" as *;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+dl {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+img {
+  display: block;
+}
+
+body {
+  font-family: $fontFamilyMain;
+  line-height: normal;
+  color: $brandTxtColor;
+}
+a {
+  text-decoration: none;
+}
+
+%link {
+    color: $brandTxtColor;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:active,
+    &focus {
+        color: $hoverColor;
+        cursor: pointer;
+    }
+
+  }
