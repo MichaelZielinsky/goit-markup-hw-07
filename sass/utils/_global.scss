@@ -1,4 +1,4 @@
-@use "./vars" as *;
+
 
 h1,
 h2,
@@ -26,16 +26,44 @@ a {
   text-decoration: none;
 }
 
-%link {
+.link {
     color: $brandTxtColor;
     transition-property: color;
-    transition-duration: 250ms;
+    transition-duration: $transitionDuration;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:active,
-    &focus {
+      &:hover {
         color: $hoverColor;
         cursor: pointer;
-    }
+      }
+      &:active {
+        color: $hoverColor;
+        cursor: pointer;
+      }
+      &:focus {
+        color: $hoverColor;
+        cursor: pointer;
+      }
+  }
 
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    
+    &--header{
+        display: flex;
+        justify-content: space-between;      
+    }
+  }
+  
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .heading-scd {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: center;
   }
