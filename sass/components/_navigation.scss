@@ -1,13 +1,13 @@
 .main-nav {
-	font-family: $fontFamilyMain;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 16px;
-	letter-spacing: 0.02em;
-	list-style-type: none;
-	display: inline-block;
-	text-decoration: none;
+  font-family: $fontFamilyMain;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+  display: inline-block;
+  text-decoration: none;
 
   &__item {
     display: inline-block;
@@ -33,5 +33,5 @@
       background: $hoverColor;
       border-radius: 2px;
     }
-}
+  }
 }

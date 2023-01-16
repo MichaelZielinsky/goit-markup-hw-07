@@ -1,14 +1,14 @@
-.wwd {
-    display: flex;
-    gap: 30px;
-    margin-top: 50px;
-    padding-bottom: 94px;
-    list-style: none;
-  
+.what-we-do {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  padding-bottom: 94px;
+  list-style: none;
+
   &__item {
     position: relative;
   }
-  
+
   &__overlay {
     position: absolute;
     bottom: 0px;
@@ -17,7 +17,7 @@
     background: $overlayBg;
     padding: 27px 90px;
   }
-  
+
   &__overlay-txt {
     font-family: $fontFamilyMain;
     font-style: normal;
