@@ -35,7 +35,29 @@
   transition-property: transform;
   transition-duration: $transitionDuration;
   transition-timing-function: linear;
-
+  &__input-icon {
+    position: absolute;
+    top: 29px;
+    left: 15px;
+    &:hover {
+      color: $hoverColor;
+      transition-property: color;
+      transition-duration: $transitionDuration;
+      transition-timing-function: $transitionTimingfunction;
+    }
+    &:active {
+      color: $hoverColor;
+      transition-property: color;
+      transition-duration: $transitionDuration;
+      transition-timing-function: $transitionTimingfunction;
+    }
+    &:focus {
+      color: $hoverColor;
+      transition-property: color;
+      transition-duration: $transitionDuration;
+      transition-timing-function: $transitionTimingfunction;
+    }
+  }
   &__title {
     font-family: $fontFamilyMain;
     font-style: normal;
@@ -52,13 +74,8 @@
     flex-direction: column;
     width: 100%;
     gap: 4px;
-    margin-bottom: 10px;
     position: relative;
-    &--icon {
-      position: absolute;
-      top: 29px;
-      left: 15px;
-    }
+
     &--label {
       font-family: $fontFamilyMain;
       font-style: normal;
@@ -68,30 +85,6 @@
       letter-spacing: 0.01em;
       color: $brandDeflautColor;
     }
-    &:hover {
-      &--icon {
-        color: $hoverColor;
-        transition-property: color;
-        transition-duration: $transitionDuration;
-        transition-timing-function: $transitionTimingfunction;
-      }
-    }
-    &:active {
-      &--icon {
-        color: $hoverColor;
-        transition-property: color;
-        transition-duration: $transitionDuration;
-        transition-timing-function: $transitionTimingfunction;
-      }
-    }
-    &:focus {
-      &--icon {
-        color: $hoverColor;
-        transition-property: color;
-        transition-duration: $transitionDuration;
-        transition-timing-function: $transitionTimingfunction;
-      }
-    }
   }
   &__input-group-2 {
     display: flex;
@@ -100,25 +93,26 @@
     align-items: center;
     gap: 30px;
     margin-top: 20px;
-    &--agreements {
-      text-decoration: underline;
-      color: $hoverColor;
-    }
-    &--label {
-      font-family: $fontFamilyMain;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      letter-spacing: 0.03em;
-      color: $brandDeflautColor;
-    }
+  }
+  &__input-group-2-label {
+    font-family: $fontFamilyMain;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $brandDeflautColor;
+  }
+  &__input-agreements {
+    text-decoration: underline;
+    color: $hoverColor;
   }
   &__input-border {
     padding: 12px 0px 12px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: $borderRadiusDeflaut;
     height: 40px;
+    margin-bottom: 10px;
     &:hover {
       border: 1px solid $hoverColor;
       outline: none;
