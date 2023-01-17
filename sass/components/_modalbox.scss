@@ -39,25 +39,8 @@
     position: absolute;
     top: 29px;
     left: 15px;
-    &:hover {
-      color: $hoverColor;
-      transition-property: color;
-      transition-duration: $transitionDuration;
-      transition-timing-function: $transitionTimingfunction;
-    }
-    &:active {
-      color: $hoverColor;
-      transition-property: color;
-      transition-duration: $transitionDuration;
-      transition-timing-function: $transitionTimingfunction;
-    }
-    &:focus {
-      color: $hoverColor;
-      transition-property: color;
-      transition-duration: $transitionDuration;
-      transition-timing-function: $transitionTimingfunction;
-    }
   }
+
   &__title {
     font-family: $fontFamilyMain;
     font-style: normal;
@@ -85,6 +68,25 @@
       letter-spacing: 0.01em;
       color: $brandDeflautColor;
     }
+  }
+  &__input-group:hover &__input-icon {
+    color: $hoverColor;
+    transition-property: color;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTimingfunction;
+  }
+
+  &__input-group:active &__input-icon {
+    color: $hoverColor;
+    transition-property: color;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTimingfunction;
+  }
+  &__input-group:focus &__input-icon {
+    color: $hoverColor;
+    transition-property: color;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTimingfunction;
   }
   &__input-group-2 {
     display: flex;
