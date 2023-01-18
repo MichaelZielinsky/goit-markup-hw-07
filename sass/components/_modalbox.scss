@@ -21,6 +21,12 @@
 }
 
 .modal {
+  font-family: $fontFamilyMain;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -35,39 +41,35 @@
   transition-property: transform;
   transition-duration: $transitionDuration;
   transition-timing-function: linear;
+
+  &__label {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: $brandDeflautColor;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: $brandTxtColor;
+    margin-bottom: 12px;
+  }
+
   &__input-icon {
     position: absolute;
     top: 29px;
     left: 15px;
   }
 
-  &__title {
-    font-family: $fontFamilyMain;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $brandTxtColor;
-    margin-bottom: 12px;
-  }
   &__input-group {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 4px;
     position: relative;
-
-    &--label {
-      font-family: $fontFamilyMain;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 14px;
-      letter-spacing: 0.01em;
-      color: $brandDeflautColor;
-    }
   }
   &__input-group:hover &__input-icon {
     color: $hoverColor;
@@ -75,7 +77,6 @@
     transition-duration: $transitionDuration;
     transition-timing-function: $transitionTimingfunction;
   }
-
   &__input-group:active &__input-icon {
     color: $hoverColor;
     transition-property: color;
@@ -97,12 +98,6 @@
     margin-top: 20px;
   }
   &__input-group-2-label {
-    font-family: $fontFamilyMain;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
     color: $brandDeflautColor;
   }
   &__input-agreements {
@@ -139,9 +134,6 @@
   }
   &__textarea {
     padding: 12px 16px;
-    font-family: $fontFamilyMain;
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
